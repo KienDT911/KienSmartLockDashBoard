@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 15px;
+}
+
+/* Status Indicator Styling */
+.status-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+}
+
+.status-label {
+    font-size: 1.2em;
+    color: #34495e;
+    font-weight: 600;
+}
+
+#door-status {
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#status-icon {
+    margin-right: 10px;
+}
+
+/* Status Themes */
+.locked {
+    background-color: #e74c3c; /* Red */
+}
+
+.open {
+    background-color: #2ecc71; /* Green */
+}
+
+.unknown {
+    background-color: #f39c12; /* Orange */
+}
+
+/* Button Styling */
+#toggle-button {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #3498db; /* Blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+    font-weight: 600;
+}
+
+#toggle-button:hover {
+    background-color: #2980b9;
+}
+
+#toggle-button:active {
+    transform: scale(0.99);
+}
+
+/* Log Styling */
+.log-section {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.log-section h2 {
+    color: #34495e;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+#log-entries {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+#log-entries li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ecf0f1;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#log-entries li:last-child {
+    border-bottom: none;
+}
+
+.log-entry-user {
+    font-weight: bold;
+    color: #2c3e50;
+}
